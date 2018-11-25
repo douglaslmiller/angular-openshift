@@ -1,4 +1,4 @@
-FROM nginx:1.13.3-alpine
+FROM nginx
 
 ## Copy our nginx config
 COPY nginx/ /etc/nginx/conf.d/
@@ -7,8 +7,8 @@ COPY nginx/ /etc/nginx/conf.d/
 RUN rm -rf /usr/share/nginx/html/*
 
 ## copy over the artifacts in dist folder to default nginx public folder
-COPY dist/ /usr/share/nginx/html
+COPY dist/angular-openshift/ /usr/share/nginx/html
 
-EXPOSE 8080
+EXPOSE 8080:8080
 
-CMD ["root", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
