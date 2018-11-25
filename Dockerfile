@@ -9,6 +9,6 @@ RUN rm -rf /usr/share/nginx/html/*
 ## copy over the artifacts in dist folder to default nginx public folder
 COPY dist/angular-openshift/ /usr/share/nginx/html
 
-EXPOSE 8080:8080
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
