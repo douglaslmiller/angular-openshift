@@ -7,10 +7,10 @@ kind: BuildConfig
 metadata:
   creationTimestamp: '2018-01-08T20:54:22Z'
   name: angular-openshift-chained-s2i
-  namespace: myproject
+  namespace: angular-openshift
   resourceVersion: '45008'
   selfLink: >-
-    /apis/build.openshift.io/v1/namespaces/myproject/buildconfigs/angular-openshift-chained-s2i
+    /apis/build.openshift.io/v1/namespaces/angular-openshift/buildconfigs/angular-openshift-chained-s2i
   uid: 1a6150a7-f4b6-11e7-a959-525400d2f593
 spec:
   nodeSelector: null
